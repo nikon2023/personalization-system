@@ -9,16 +9,56 @@ A portable personal-collaboration governance package: weekly reviews discover st
 | 文件 / File | 作用 / Role |
 |---|---|
 | `SKILL.md` | 周度复盘方法、证据要求与分层决策 / weekly review method, evidence rules, placement decisions |
+| `skills/understand-first/SKILL.md` | 问题前置诊断、理解目标、表达升级、证据检查与能力沉淀 / diagnose before answering, optimize for understanding, escalate representation, verify, and transfer learning |
+| `skills/understand-first/README.md` | Understand First 英文说明 / English guide |
+| `skills/understand-first/README.zh-CN.md` | Understand First 中文说明 / Chinese guide |
 | `PERSONALIZATION_BASELINE.md` | 已确认的全局协作原则与表达偏好 / approved cross-project principles and response preferences |
 | `CANDIDATE_POOL.md` | 待观察、待批准及已处置候选 / observed, proposed, and resolved candidates |
 | `CHANGELOG.md` | 经批准的变动记录 / approved-change record |
 | `README.md` | 安装、初始化与维护说明 / installation, initialization, and maintenance guide |
 
+## Skills
+
+### personalization-weekly-review
+
+用于周度复盘、候选池治理与个性化基线维护。
+
+Use for weekly review, candidate governance, and personalization baseline maintenance.
+
+### understand-first
+
+用于复杂、模糊、战略、反复卡住或可能沉淀为长期能力的问题。
+
+核心链路：
+
+```text
+Preflight diagnosis
+→ Pattern
+→ Root cause
+→ Verification
+→ Transfer
+→ Lowest effective representation
+→ Evidence Gate
+→ Capability Candidate
+```
+
+推荐调用：
+
+```text
+Use understand-first on this problem.
+```
+
+或：
+
+```text
+先理解，不要急着回答。用 understand-first 分析这个问题。
+```
+
 ## 安装 / Install
 
-1. Clone or download this private repository to the environment where you want to reuse it.
-2. For Codex-style skills, place the package folder in the environment's discoverable skills location, keeping `SKILL.md` at the package root.
-3. Keep the baseline, candidate pool, and changelog beside the Skill; they are its governance state, not optional examples.
+1. Clone or download this repository to the environment where you want to reuse it.
+2. For Codex-style skills, keep each skill's `SKILL.md` at the root of its own skill directory.
+3. Keep the baseline, candidate pool, and changelog beside the weekly-review Skill; they are governance state, not optional examples.
 4. Read the baseline before the first review. Do not overwrite it with assumptions from a new environment.
 
 ## 首次初始化 / First use
